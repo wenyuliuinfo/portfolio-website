@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tech Support AI Agent - Eva Liu</title>
+  <meta name="description" content="Tech Support AI Agent: a RAG-powered assistant for Azure Site Recovery and Azure Migrate that answers grounded, cited questions with account-scoped ticket context.">
+  <link rel="icon" href="../assets/evaliu_logo_black_transparent.png" type="image/png">
+  <script>
+    document.documentElement.classList.add('js');
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('reduce-motion');
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="project-page.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-nav" data-nav>
+    <a class="brand" href="../index.html#top" aria-label="Eva Liu, back to home">
+      <img src="../assets/evaliu_logo_white_transparent.png" alt="Eva Liu logo" width="44" height="44">
+      <span class="brand-name">Eva Liu</span>
+    </a>
+    <button class="nav-toggle" data-nav-toggle type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+    </button>
+    <nav class="nav-links" id="site-menu" aria-label="Primary">
+      <a class="nav-link" href="../index.html#work">Work</a>
+      <a class="nav-link" href="../index.html#about">About</a>
+      <a class="nav-link" href="../index.html#capabilities">Services</a>
+      <a class="nav-link" href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero case-hero case-hero--support" id="top" aria-label="Tech Support AI Agent">
+      <div class="hero-meta">
+        <span class="meta-item">Shanghai, CN</span>
+        <span class="meta-item" data-local-time>09:51</span>
+      </div>
+      <div class="hero-inner">
+        <p class="hero-kicker" data-reveal>02 / Support Agent</p>
+        <h1 class="hero-title case-hero-title" data-reveal><span>Tech Support</span><span>AI Agent</span></h1>
+        <p class="hero-description case-hero-description" data-reveal>Grounded, account-aware answers for Azure Site Recovery and Azure Migrate support, with strict citation discipline and seamless escalation.</p>
+        <div class="case-hero-meta" data-reveal>
+          <span>RAG / Next.js / Pinecone</span>
+          <span>Q3 2026 / Live</span>
+          <a class="case-hero-link" href="#overview">Read the case <span aria-hidden="true">&darr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <article class="case-article">
+      <div class="case-content">
+        <section class="case-section case-section--first" id="overview">
+          <div class="case-section-head">
+            <p class="section-label" data-reveal>01 / Overview</p>
+            <h2 data-reveal>Faster answers, grounded in documentation.</h2>
+          </div>
+          <div class="case-body" data-reveal>
+            <p>Technical support for complex cloud services like Azure Site Recovery (ASR) and Azure Migrate has long been a bottleneck. Operation engineers, solution architects, and first-time product trial users open tickets with questions ranging from "How do I safely delete a Recovery Services vault after failover?" to error messages during test failover or high-level migration architecture guidance. Today those requests land in a shared human queue, first response times stretch, the same issues get solved repeatedly by different engineers, and each new agent lacks the user's historical context.</p>
+            <p>The Tech Support AI Agent is built to change that. It delivers grounded, cited answers in seconds for fundamental questions and standard operational procedures, while seamlessly escalating the harder cases and preserving full account history.</p>
+          </div>
+        </section>
+
+        <section class="case-section" id="market">
+          <div class="case-section-head">
+            <p class="section-label" data-reveal>02 / Market Research</p>
+            <h2 data-reveal>The persistent friction in enterprise cloud support.</h2>
+          </div>
+          <div class="case-body" data-reveal>
+            <p>Azure Site Recovery and Azure Migrate sit at the center of business-continuity and cloud-migration workloads. The users who interact with them expect fast, accurate guidance, yet the current support model creates four structural pain points:</p>
+          </div>
+          <ul class="case-list" data-reveal>
+            <li><span class="case-num">01</span><span><strong>Long first-response times</strong> - Every ticket routes into a human backend pool.</span></li>
+            <li><span class="case-num">02</span><span><strong>High request variation</strong> - Questions span product fundamentals, step-by-step procedures, error diagnostics, and architectural design.</span></li>
+            <li><span class="case-num">03</span><span><strong>Repeated work</strong> - Multiple engineers independently research and answer the same recurring issues.</span></li>
+            <li><span class="case-num">04</span><span><strong>Lost context</strong> - Successive tickets for the same account are handled by different people who lack prior resolutions and preferences.</span></li>
+          </ul>
+          <div class="case-body" data-reveal>
+            <p>These frictions directly affect customer satisfaction, operational cost, and the speed at which customers adopt and expand Azure services. An AI agent that reliably answers the high-volume, well-documented questions can cut first-response time dramatically, raise resolution rates without human intervention, and free senior engineers for the complex architectural and multi-product cases that remain out of scope for the initial release.</p>
+          </div>
+        </section>
+
+        <section class="case-section" id="strategy">
+          <div class="case-section-head">
+            <p class="section-label" data-reveal>03 / Product Strategy</p>
+            <h2 data-reveal>Mission, scope, and measurable value.</h2>
+          </div>
+          <p class="case-statement" data-reveal>Deliver faster first-time responses, personalized context from past tickets, and higher overall support efficiency for Azure Site Recovery and Azure Migrate users, while keeping answers strictly grounded in official documentation and escalating when confidence is insufficient.</p>
+
+          <p class="case-subhead" data-reveal>Target Users &amp; Scenarios</p>
+          <ul class="case-list" data-reveal>
+            <li><span class="case-num">01</span><span>Product trial users seeking cost-safe cleanup steps after failover.</span></li>
+            <li><span class="case-num">02</span><span>Operations engineers troubleshooting test-failover failures.</span></li>
+            <li><span class="case-num">03</span><span>Solution architects designing on-prem VMware-to-Azure migration strategies for foundational guidance only.</span></li>
+          </ul>
+
+          <p class="case-subhead" data-reveal>Product Scope</p>
+          <ul class="case-list" data-reveal>
+            <li><span class="case-num">01</span><span>Simple fundamental questions about ASR and Azure Migrate.</span></li>
+            <li><span class="case-num">02</span><span>Standard operational procedures drawn from product manuals and internal handbooks.</span></li>
+            <li><span class="case-num">03</span><span>Diagnosis and remediation of specific error codes after procedures have been attempted.</span></li>
+            <li><span class="case-num">04</span><span>Functionality improvements that span multiple Azure products.</span></li>
+            <li><span class="case-num">05</span><span>Full architectural design optimizing performance, cost, and stability across complex environments.</span></li>
+          </ul>
+
+          <p class="case-subhead" data-reveal>Success Metrics</p>
+          <div class="case-metric-grid" data-reveal>
+            <div class="case-metric"><strong>50%</strong><span>First-response time improvement within three months</span></div>
+            <div class="case-metric"><strong>30%</strong><span>User satisfaction rate increase</span></div>
+            <div class="case-metric"><strong>50/50</strong><span>A/B traffic split against legacy human tickets</span></div>
+          </div>
+          <div class="case-body" data-reveal>
+            <p>Primary KPIs track resolution rate, CSAT, first-response time, average handle time, and escalation rate, with clear launch and rollback criteria based on those core metrics.</p>
+          </div>
+        </section>
+
+        <section class="case-section" id="foundation">
+          <div class="case-section-head">
+            <p class="section-label" data-reveal>04 / Technical Foundation</p>
+            <h2 data-reveal>RAG pipeline with citation discipline.</h2>
+          </div>
+          <div class="case-body" data-reveal>
+            <p>The system combines a real-time retrieval path for grounded answers with an offline ingestion path for knowledge-base documents and CRM ticket history. Knowledge-base documents are the single source of truth; ticket context personalizes answers but never overrides current documentation.</p>
+          </div>
+
+          <p class="case-subhead" data-reveal>Technical Stack</p>
+          <div class="case-stack" data-reveal>
+            <div class="case-stack-row"><span class="case-stack-name">Frontend</span><span class="case-stack-desc">Next.js client-side UI aligned with the Azure product surface.</span></div>
+            <div class="case-stack-row"><span class="case-stack-name">Backend</span><span class="case-stack-desc">FastAPI + Python for business logic and orchestration.</span></div>
+            <div class="case-stack-row"><span class="case-stack-name">Data</span><span class="case-stack-desc">Pinecone for document chunks and metadata, PostgreSQL for accounts, historical tickets, and resolutions.</span></div>
+            <div class="case-stack-row"><span class="case-stack-name">LLM &amp; Auth</span><span class="case-stack-desc">OpenAI GPT-series streaming completions, OpenAI text-embedding-3-large, and external IdP issuing JWTs with account_id.</span></div>
+          </div>
+
+          <figure class="case-figure" data-reveal>
+            <img src="../docs/images/tech-support-login-page.png" alt="Tech Support AI Agent login page for account-scoped access" width="2880" height="1720" loading="lazy">
+            <figcaption><span>Login</span><span>Account-scoped authentication</span></figcaption>
+          </figure>
+          <figure class="case-figure" data-reveal>
+            <img src="../docs/images/tech-support-page.png" alt="Tech Support AI Agent chat interface with grounded cited answer and ticket context" width="2880" height="1720" loading="lazy">
+            <figcaption><span>Chat Interface</span><span>Grounded answer with sources</span></figcaption>
+          </figure>
+
+          <p class="case-subhead" data-reveal>Online Query Path</p>
+          <ul class="case-list" data-reveal>
+            <li><span class="case-num">01</span><span>User authenticates; session token supplies account_id.</span></li>
+            <li><span class="case-num">02</span><span>Frontend loads the account's ticket list.</span></li>
+            <li><span class="case-num">03</span><span>User submits a question, optionally referencing a prior ticket.</span></li>
+            <li><span class="case-num">04</span><span>Backend retrieves relevant historical tickets from PostgreSQL, filtered by account_id.</span></li>
+            <li><span class="case-num">05</span><span>Query is embedded and sent to Pinecone; top-k chunks return with metadata filters.</span></li>
+            <li><span class="case-num">06</span><span>Prompt is assembled from system instructions, retrieved KB chunks, optional ticket context, and the user query.</span></li>
+            <li><span class="case-num">07</span><span>LLM streams tokens back via Server-Sent Events with citations and ticket-context events interleaved.</span></li>
+            <li><span class="case-num">08</span><span>Frontend displays the grounded answer with sources.</span></li>
+          </ul>
+
+          <p class="case-subhead" data-reveal>Offline Ingestion &amp; Retrieval Policy</p>
+          <div class="case-body" data-reveal>
+            <p>Knowledge-base documents are chunked at 500 tokens with 50-token overlap, embedded, and upserted into Pinecone with rich metadata such as document_id, source_path, chunk_index, title, section_heading, and ingestion_version. A scheduled ETL job syncs new and updated tickets from the CRM into PostgreSQL hourly.</p>
+            <p>Retrieval normalizes the query, takes the top-8 Pinecone chunks, adds up to 3 relevant tickets, deduplicates, optionally re-ranks, and drops low-confidence results. If no KB chunk passes the relevance threshold, the agent returns a short, honest fallback and suggests escalation or rephrasing. Every non-trivial factual claim must cite at least one KB chunk.</p>
+          </div>
+
+          <p class="case-subhead" data-reveal>Evaluation Framework</p>
+          <ul class="case-list" data-reveal>
+            <li><span class="case-num">01</span><span><strong>Retrieval quality</strong> - Recall@k, Precision@k, Mean Reciprocal Rank, and citation-source match rate.</span></li>
+            <li><span class="case-num">02</span><span><strong>Answer quality</strong> - Groundedness, citation correctness, completeness, hallucination rate, and correct refusal when grounding is insufficient.</span></li>
+            <li><span class="case-num">03</span><span><strong>Operational performance</strong> - p50/p95/p99 latency, embedding and Pinecone query latency, token usage, empty-result rate, and streaming completion rate.</span></li>
+          </ul>
+          <div class="case-body" data-reveal>
+            <p>Any change to chunking, embeddings, prompting, or retrieval logic must pass the benchmark set before release. Regression on citation correctness or groundedness is a hard blocker.</p>
+          </div>
+        </section>
+
+        <section class="case-section" id="looking-ahead">
+          <div class="case-section-head">
+            <p class="section-label" data-reveal>05 / Looking Ahead</p>
+            <h2 data-reveal>Faster resolution, lower cost, happier users.</h2>
+          </div>
+          <div class="case-body" data-reveal>
+            <p>The initial release focuses on the highest-volume, best-documented questions, delivering measurable gains in response time and satisfaction within three months. Subsequent iterations can expand scope to error diagnosis and richer architectural guidance once the grounding and escalation patterns prove reliable.</p>
+            <p>By combining a tightly scoped RAG system, account-aware ticket context, strict citation discipline, and continuous evaluation, the Tech Support AI Agent turns routine Azure ASR and Migrate support from a cost center into a scalable, high-quality experience.</p>
+          </div>
+        </section>
+
+        <nav class="case-next" aria-label="Project navigation" data-reveal>
+          <a href="project-auto-trading-ai-agent.html"><span aria-hidden="true">&larr;</span> Previous project</a>
+          <a href="../index.html#work">Back to work <span aria-hidden="true">&rarr;</span></a>
+        </nav>
+
+        <div class="case-cta" data-reveal>
+          <h2>Explore the repository.</h2>
+          <a href="https://github.com/wenyuliuinfo/tech-support-ai-agent" target="_blank" rel="noreferrer">Open GitHub <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <div>
+        <p class="section-label footer-label">Contact</p>
+        <a class="footer-email" href="mailto:wenyuliuemail@163.com">wenyuliuemail@163.com</a>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/evaliuinfo" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/wenyuliuinfo" target="_blank" rel="noreferrer">GitHub</a>
+        <span>Shanghai, China</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Eva Liu</span>
+      <span>Design &amp; Technology</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="../main.js"></script>
+</body>
+</html>

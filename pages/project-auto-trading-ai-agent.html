@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Auto Trading AI Agent - Eva Liu</title>
+  <meta name="description" content="Auto Trading AI Agent: a multi-agent LangGraph platform that turns thematic investment requests into compliant, ranked trade baskets for large broker-dealer advisors.">
+  <link rel="icon" href="../assets/evaliu_logo_black_transparent.png" type="image/png">
+  <script>
+    document.documentElement.classList.add('js');
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('reduce-motion');
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="project-page.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-nav" data-nav>
+    <a class="brand" href="../index.html#top" aria-label="Eva Liu, back to home">
+      <img src="../assets/evaliu_logo_white_transparent.png" alt="Eva Liu logo" width="44" height="44">
+      <span class="brand-name">Eva Liu</span>
+    </a>
+    <button class="nav-toggle" data-nav-toggle type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+    </button>
+    <nav class="nav-links" id="site-menu" aria-label="Primary">
+      <a class="nav-link" href="../index.html#work">Work</a>
+      <a class="nav-link" href="../index.html#about">About</a>
+      <a class="nav-link" href="../index.html#capabilities">Services</a>
+      <a class="nav-link" href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero case-hero case-hero--auto" id="top" aria-label="Auto Trading AI Agent">
+      <div class="hero-meta">
+        <span class="meta-item">Shanghai, CN</span>
+        <span class="meta-item" data-local-time>09:51</span>
+      </div>
+      <div class="hero-inner">
+        <p class="hero-kicker" data-reveal>01 / Research Agent</p>
+        <h1 class="hero-title case-hero-title" data-reveal><span>Auto Trading</span><span>AI Agent</span></h1>
+        <p class="hero-description case-hero-description" data-reveal>Theme-to-execution for large broker-dealer advisors. An agentic platform turns a thematic request into a compliant, ranked, multi-account trade basket in minutes.</p>
+        <div class="case-hero-meta" data-reveal>
+          <span>LangGraph / Next.js / Azure</span>
+          <span>Q4 2026 - Q3 2027</span>
+          <a class="case-hero-link" href="#overview">Read the case <span aria-hidden="true">&darr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <article class="case-article">
+      <div class="case-content">
+        <section class="case-section case-section--first" id="overview">
+          <div class="case-section-head">
+            <p class="section-label" data-reveal>01 / Overview</p>
+            <h2 data-reveal>Theme-to-execution in minutes.</h2>
+          </div>
+          <div class="case-body" data-reveal>
+            <p>In the high-stakes world of wealth management, financial advisors at large broker-dealers face a familiar bottleneck. A client mentions interest in "AI infrastructure," "grid modernization," or "defense tech." The advisor spends hours screening Morningstar, Bloomberg, and YCharts, manually building a shortlist, navigating firm compliance lists in a separate system, then entering trades account-by-account in the order management system, often missing the market window entirely.</p>
+            <p>The Automated Trading AI Agent is designed to collapse that cycle from hours into minutes while keeping the advisor firmly in control. This article outlines the market opportunity, product strategy, and technical foundation behind the platform.</p>
+          </div>
+        </section>
+
+        <section class="case-section" id="market">
+          <div class="case-section-head">
+            <p class="section-label" data-reveal>02 / Market Research</p>
+            <h2 data-reveal>The perfect storm for agentic thematic tools.</h2>
+          </div>
+          <div class="case-body" data-reveal>
+            <p>Large broker-dealers, including Morgan Stanley Wealth Management, Merrill Lynch/Bank of America, UBS, Wells Fargo Advisors, and scaled platforms like LPL, Ameriprise, Raymond James, and Edward Jones, remain the core channel for mass-affluent through ultra-high-net-worth clients. They sit inside a global wealth ecosystem of roughly $60-130+ trillion in assets under management, with U.S. advised assets continuing to expand amid demographic shifts, market growth, and technology disruption.</p>
+            <p>McKinsey's outlook on U.S. wealth management in 2035 highlights four critical shifts that favor specialized agentic solutions:</p>
+          </div>
+          <ul class="case-list" data-reveal>
+            <li><span class="case-num">01</span><span>Move from simple automation to orchestration of semi-autonomous agents that collaborate with advisors and back-office teams.</span></li>
+            <li><span class="case-num">02</span><span>Reinvest productivity gains into innovation rather than pure cost-cutting.</span></li>
+            <li><span class="case-num">03</span><span>Build AI-fluent, human-centered organizations.</span></li>
+            <li><span class="case-num">04</span><span>Enable a new archetype of digital-first, AI-native advice delivery that expands access while the best human advisors migrate further upmarket.</span></li>
+          </ul>
+          <div class="case-body" data-reveal>
+            <p>Competitive landscape analysis shows existing platforms excel in different slices of the problem. Magnifi (TIFIN) leads in natural-language thematic discovery and research. Vise focuses on hyper-personalized portfolio construction and tax-aware automation. Envestnet provides enterprise-scale insights, next-best-action engines, and workflow integration across planning and reporting.</p>
+            <p>None fully close the loop from client theme request, to compliant ranked basket, to multi-account allocation, to advisor-approved execution inside the constraints of a large broker-dealer. That gap is the opening.</p>
+          </div>
+        </section>
+
+        <section class="case-section" id="strategy">
+          <div class="case-section-head">
+            <p class="section-label" data-reveal>03 / Product Strategy</p>
+            <h2 data-reveal>Mission, value, and differentiation.</h2>
+          </div>
+          <p class="case-subhead" data-reveal>Product Vision</p>
+          <div class="case-body" data-reveal>
+            <p>A theme-to-execution AI Agent platform purpose-built for financial advisors at large wirehouses and broker-dealers.</p>
+          </div>
+          <p class="case-statement" data-reveal>For advisors who must respond to client-driven theme requests with specific, timely, compliant trades, the Automated Trading Agent translates a theme into ready-to-execute trade baskets across client portfolios in minutes.</p>
+          <div class="case-body" data-reveal>
+            <p>Product mission: accelerate value-generation speed with compliant decision-making through four tightly linked capabilities:</p>
+          </div>
+          <ul class="case-list" data-reveal>
+            <li><span class="case-num">01</span><span><strong>Theme Classifier</strong> - NLP engine that maps a keyword or phrase to a ranked basket of 8-12 securities, each with confidence scores and human-readable rationales.</span></li>
+            <li><span class="case-num">02</span><span><strong>Real-time Compliance Overlay</strong> - Inline green/yellow/red flags evaluated against firm-specific rules, with drill-downs and auto-replacement suggestions, no separate portal.</span></li>
+            <li><span class="case-num">03</span><span><strong>Intelligent Allocation Rules</strong> - Per-account distribution (equal weight, risk-adjusted, tax-aware) that respects individual constraints and produces a structured trade list.</span></li>
+            <li><span class="case-num">04</span><span><strong>Advisor-in-the-Loop Execution</strong> - Unified review dashboard with full edit capability, version tracking, client-ready exports, and an explicit approval gate before any OMS hand-off.</span></li>
+          </ul>
+          <div class="case-body" data-reveal>
+            <p>Differentiation is deliberate: versus Magnifi/TIFIN, stronger compliance visibility and multi-account bulk execution; versus Vise, more specialized for rapid thematic idea generation and explicit compliance flagging with a lighter, advisor-controlled workflow; versus Envestnet/Aladdin, a fast thematic front-end that feeds existing enterprise systems rather than replacing them.</p>
+          </div>
+          <div class="case-metric-grid" data-reveal>
+            <div class="case-metric"><strong>50</strong><span>Active advisor seats at product-market fit</span></div>
+            <div class="case-metric"><strong>85%</strong><span>Time reduction per basket target</span></div>
+            <div class="case-metric"><strong>$500M</strong><span>AUM influenced at full-market stage</span></div>
+            <div class="case-metric"><strong>$80M</strong><span>ARR target</span></div>
+          </div>
+        </section>
+
+        <section class="case-section" id="foundation">
+          <div class="case-section-head">
+            <p class="section-label" data-reveal>04 / Technical Foundation</p>
+            <h2 data-reveal>Five agents, one transparent pipeline.</h2>
+          </div>
+          <div class="case-body" data-reveal>
+            <p>The system is deliberately scoped as research-and-proposal, not live order placement. Given a theme such as "grid modernization," it screens a candidate universe, analyzes each name, scores and ranks with a transparent quantitative model, constructs a constrained 5-10 name basket, and produces a written rationale. Runs are on-demand only.</p>
+          </div>
+
+          <figure class="case-figure" data-reveal>
+            <img src="../docs/images/auto-trading-agent-homepage.png" alt="Auto Trading AI Agent homepage showing the theme research workspace" width="2878" height="1722" loading="lazy">
+            <figcaption><span>Homepage</span><span>Research workspace</span></figcaption>
+          </figure>
+          <figure class="case-figure" data-reveal>
+            <img src="../docs/images/auto-trading-agent-basket.png" alt="Auto Trading AI Agent basket construction page with ranked candidate securities" width="2880" height="1718" loading="lazy">
+            <figcaption><span>Basket Construction</span><span>Ranked candidate universe</span></figcaption>
+          </figure>
+          <figure class="case-figure" data-reveal>
+            <img src="../docs/images/auto-trading-agent-report.png" alt="Auto Trading AI Agent rationale report with factor breakdowns and citations" width="2878" height="1688" loading="lazy">
+            <figcaption><span>Rationale Report</span><span>Grounded, source-cited output</span></figcaption>
+          </figure>
+
+          <p class="case-subhead" data-reveal>Technical Stack</p>
+          <div class="case-stack" data-reveal>
+            <div class="case-stack-row"><span class="case-stack-name">User Interface</span><span class="case-stack-desc">Next.js 16 + FastAPI.</span></div>
+            <div class="case-stack-row"><span class="case-stack-name">Agentic Design</span><span class="case-stack-desc">LangChain / LangGraph for orchestration, Langfuse for tracing, OpenAI / DeepSeek / ZHIPU models, PostgreSQL + Redis + Pinecone for data and memory.</span></div>
+            <div class="case-stack-row"><span class="case-stack-name">Infrastructure</span><span class="case-stack-desc">Docker, PostgreSQL, Redis, Celery task queue.</span></div>
+            <div class="case-stack-row"><span class="case-stack-name">Cloud</span><span class="case-stack-desc">Azure Static Web Apps + Front Door, API Management, AKS, Azure OpenAI, AI Search, Cosmos DB, Blob Storage, Monitor + Application Insights, and DevOps with Bicep/Terraform.</span></div>
+          </div>
+
+          <p class="case-subhead" data-reveal>Multi-Agent Orchestration</p>
+          <ul class="case-list" data-reveal>
+            <li><span class="case-num">01</span><span><strong>Screener Agent</strong> - Decomposes the theme into 3-6 sub-exposures, pulls verifiable tickers from thematic ETFs, GICS, and index membership (50-150 candidates), and flags liquidity or market-cap issues.</span></li>
+            <li><span class="case-num">02</span><span><strong>Analyst Agent</strong> - Produces grounded, source-cited qualitative reports and structured scores for each ticker in parallel.</span></li>
+            <li><span class="case-num">03</span><span><strong>Modeling Agent</strong> - Applies deterministic factor scoring (thematic fit, valuation, growth, quality, momentum, sentiment), z-score normalization, weighted-sum or Borda rank aggregation, and final ranking.</span></li>
+            <li><span class="case-num">04</span><span><strong>Trader Agent</strong> - Constructs the 8-10 name basket with weights and hard constraints such as sector caps and liquidity floors.</span></li>
+            <li><span class="case-num">05</span><span><strong>Report Agent</strong> - Generates the investment rationale document from theme definition, analyst reports, and factor breakdowns.</span></li>
+          </ul>
+          <div class="case-body" data-reveal>
+            <p>Prompt engineering emphasizes narrow role framing, explicit numbered procedures, grounding and anti-hallucination constraints, and negative instructions that prevent agents from drifting into each other's responsibilities.</p>
+          </div>
+
+          <p class="case-subhead" data-reveal>Evaluation Framework</p>
+          <ul class="case-list" data-reveal>
+            <li><span class="case-num">01</span><span><strong>Deterministic components</strong> - Unit tests, property tests for monotonicity and valid ranks, and constraint verification for Modeling and Trader agents.</span></li>
+            <li><span class="case-num">02</span><span><strong>LLM-driven components</strong> - Golden-set coverage against known ETF holdings, basket-plausibility overlap checks, and groundedness verification against Langfuse traces and source tool calls.</span></li>
+            <li><span class="case-num">03</span><span><strong>System-level</strong> - Shadow-mode weight testing without re-fetch or LLM calls, forward-looking performance tracking versus the theme's reference ETF, and a mandatory human review gate before any client-facing output.</span></li>
+          </ul>
+        </section>
+
+        <section class="case-section" id="looking-ahead">
+          <div class="case-section-head">
+            <p class="section-label" data-reveal>05 / Looking Ahead</p>
+            <h2 data-reveal>From time sink to competitive advantage.</h2>
+          </div>
+          <div class="case-body" data-reveal>
+            <p>The product roadmap prioritizes Theme Classifier and Compliance Overlay for 3-6 months, followed by Smart Allocation and Advisor-in-the-Loop capabilities. The explicit project timeline runs from Q4 2026 through Q3 2027, with clear feature epics and configurability for firm-specific rules, allocation policies, and audit requirements.</p>
+            <p>By combining specialized multi-agent orchestration, transparent quantitative ranking, real-time compliance, and strict advisor control, the Automated Trading AI Agent turns thematic requests from a time sink into a competitive advantage. Advisors regain hours, clients receive timely and explainable exposure, and firms gain a supervised, auditable path into the agentic future of wealth management.</p>
+          </div>
+        </section>
+
+        <nav class="case-next" aria-label="Project navigation" data-reveal>
+          <a href="../index.html#work"><span aria-hidden="true">&larr;</span> Back to work</a>
+          <a href="project-tech-support-ai-agent.html">Next project <span aria-hidden="true">&rarr;</span></a>
+        </nav>
+
+        <div class="case-cta" data-reveal>
+          <h2>Explore the repository.</h2>
+          <a href="https://github.com/wenyuliuinfo/auto-trading-ai-agent" target="_blank" rel="noreferrer">Open GitHub <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <div>
+        <p class="section-label footer-label">Contact</p>
+        <a class="footer-email" href="mailto:wenyuliuemail@163.com">wenyuliuemail@163.com</a>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/evaliuinfo" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/wenyuliuinfo" target="_blank" rel="noreferrer">GitHub</a>
+        <span>Shanghai, China</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Eva Liu</span>
+      <span>Design &amp; Technology</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="../main.js"></script>
+</body>
+</html>
