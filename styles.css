@@ -351,6 +351,14 @@ body.nav-open .site-nav {
   border-top: 1px solid var(--line);
 }
 
+.work {
+  padding-bottom: clamp(64px, 8vw, 110px);
+}
+
+.career {
+  padding-top: clamp(64px, 8vw, 110px);
+}
+
 .section-inner {
   width: min(100%, 1400px);
   margin-inline: auto;
@@ -695,6 +703,119 @@ body.nav-open .site-nav {
   color: var(--accent);
 }
 
+/* Career */
+
+.career-list {
+  margin-top: clamp(56px, 8vw, 110px);
+  border-top: 1px solid var(--line);
+}
+
+.career-row {
+  padding: clamp(40px, 6vw, 80px) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.career-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px 40px;
+  align-items: start;
+}
+
+.career-company {
+  margin: 0 0 18px;
+  font-size: clamp(1.9rem, 3.8vw, 3.5rem);
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.career-role {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.career-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  text-align: right;
+}
+
+.career-meta span {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.career-bullets {
+  display: grid;
+  gap: 12px;
+  margin: 36px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.career-bullets li {
+  position: relative;
+  max-width: 960px;
+  padding-left: 22px;
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.career-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 10px;
+  height: 2px;
+  background: var(--accent);
+}
+
+.education {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px 48px;
+  margin-top: clamp(56px, 8vw, 110px);
+  padding: clamp(40px, 6vw, 72px) 0;
+  border-top: 1px solid var(--line);
+}
+
+.education-school {
+  margin: 0;
+  font-size: clamp(1.9rem, 3.8vw, 3.5rem);
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.education-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  text-align: right;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
 /* Footer */
 
 .site-footer {
@@ -927,6 +1048,25 @@ body.nav-open .site-nav {
 
   .capability-desc {
     grid-column: 2;
+  }
+
+  .career-head {
+    grid-template-columns: 1fr;
+  }
+
+  .career-meta {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .education {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .education-meta {
+    align-items: flex-start;
+    text-align: left;
   }
 }
 
