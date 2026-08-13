@@ -26,7 +26,7 @@ thorough assessment and analysis of existing IDC and designed end-to-end migrati
 on a 5-level customer demand hierarchy and created a 3-tier implementation architecture for cloud adoption.
 
 #### IBM Shanghai, China
-##### Application Architect | Cloud Migration & Cloud Native                     Aug, 2021 – Jun, 2022
+##### Application Architecture Consultant | Cloud Migration & Cloud Native                     Aug, 2021 – Jun, 2022
 • Developed cloud migration roadmap for a major Southeast Asian bank. Conducted deep-dive assessments of
 the bank's core transaction, and credit systems, benchmarked against AWS financial services best practices.
 • Delivered key project for IT organization cloud-native transformation, accelerated operation efficiency for
