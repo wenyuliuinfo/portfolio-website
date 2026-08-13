@@ -22,7 +22,7 @@ main.js                 Lenis, GSAP, ScrollTrigger, nav, reveal, parallax
 pages/                  two generated project case pages
 pages/project-page.css  shared project-page layout and typography
 assets/evaliu_logo_white_transparent.png  nav logo
-assets/evaliu_logo_black_transparent.png  browser favicon
+assets/evaliu_logo_black_favicon.png  tightly cropped browser favicon
 background_video.mp4    provided hero video
 CONTENT.md              source copy for later swaps
 ```
