@@ -83,6 +83,40 @@
   border-color: var(--white);
 }
 
+.case-hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 0 22px;
+  background: var(--white);
+  color: var(--black);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.case-hero-button:hover {
+  background: var(--accent);
+  color: var(--white);
+}
+
+.case-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+  margin-left: auto;
+}
+
+.case-hero-actions .case-hero-link {
+  margin-left: 0;
+}
+
 .case-article {
   background: var(--black);
   color: var(--white);
@@ -338,6 +372,10 @@
   }
 
   .case-hero-link {
+    margin-left: 0;
+  }
+
+  .case-hero-actions {
     margin-left: 0;
   }
 
